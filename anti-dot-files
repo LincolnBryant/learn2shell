@@ -12,6 +12,27 @@ repeat the last command:
 	- !!
 
 search your history:
-	ctrl-R
+	ctrl-r
 
-	 
+make a bunch of files/directories at once using expansion:
+	mkdir {kittens,puppies,piglets}
+
+shell navigation:
+	ctrl-a -> beginning of line
+	ctrl-e -> end of line
+
+modes:
+	by default, the shell is in 'emacs mode'
+	you can switch it over to 'vi' mode with:
+		$ set -o vi	
+
+job control: 
+	ctrl-z to send the 'stop' signal
+
+long running processes:
+	use 'screen'
+	ctrl-z, jobs, disown %1
+
+change your prompt:
+	echo $PS1
+	export PS1=[yourchangeshere]		
