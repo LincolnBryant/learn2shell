@@ -1,15 +1,19 @@
 What to do when your screen gets messed up?
-	- clear
-	- reset
+	$ clear
+	$ reset
 
-Cat's evil twin: 'tac'
-	also 'rev'
+change to the previous directory:
+	$ cd -
+
+navigate directories using a stack:
+	$ pushd
+	$ popd
 
 repeat the last command:
-	- !!
+	$ !!
 
-make a bunch of files/directories at once using expansion:
-	mkdir {kittens,puppies,piglets}
+do lots of stuff at once using expansion:
+	$ mkdir {kittens,puppies,piglets}
 
 search your history:
 	ctrl-r
@@ -27,12 +31,15 @@ job control:
 	ctrl-z to send the 'stop' signal
 
 long running processes:
-	use 'screen'
 	ctrl-z, jobs, disown %1
+        or use 'screen'
 
 change your prompt:
 	echo $PS1
 	export PS1=[yourchangeshere]		
+
+Cat's evil twin: 'tac'
+	also 'rev'
 
 Fire off packets to arbitrary remote hosts
 	echo "foo" > /dev/tcp/[hostname]/port
